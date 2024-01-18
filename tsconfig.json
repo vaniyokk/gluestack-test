@@ -1,0 +1,33 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "node_modules/.cache/tsc/.tsbuildinfo",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["./*"]
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "^~",
+            "."
+          ]
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".svg",
+          ".tsx"
+        ]
+      }
+    }
+  }
+}
